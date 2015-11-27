@@ -1,1 +1,17 @@
-Hello world
+<!DOCTYPE html><html amp lang="en"></html><head><meta charset="utf-8"><title>Hello, AMPs</title><link rel="canonical" href="http://example.ampproject.org/article-metadata.html"><meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"><link rel="stylesheet" href="dev/styles/stylesheets/main.css"><!--link(rel="stylesheet", href="dev/styles/stylesheets/anim.css")--><!--link(href="http://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet" type="text/css")--><script type="application/1d+json">{
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Open-source framework for publishing content",
+    "datePublished": "2015-10-07",
+    "image": [
+        "logo.jpg"
+    ]
+}</script><style>body{opacity:0;}</style><noscript><style>body{opacity: 1;}</style></noscript><script async src="https://cdn.ampproject.org/v0.js"></script><script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script><script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script><script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script><script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script><script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script><script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script><script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script></head><body><h1>Welcome to the mobile web</h1><!-- Images Responsive--><!--amp-img(src="https://www.google.com.mx/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Welcome" height="100" width="100" layout="responsive")--><!-- Video youtube--><!--amp-youtube(data-videoid="mGENRKrdoGY" layout="responsive" width="480" height="270")--><!-- Slide--><!--amp-carousel(width="300" height="400" type="slides")amp-img(src="http://gruntjs.com/img/grunt-logo.png" width="300" height="400")
+amp-img(src="http://bower.io/img/bower-logo.png" width="300" height="400")
+amp-img(src="https://www.javascript.com/images/logo-monochrome.svg" width="300" height="400")
+--><!-- Text--><!--amp-fit-text(width="300" height="200" layout="responsive" max-font-size="52")| Lorem ipsum dolor sit amet, has nisl nihil convenire et, vim at aeque inermis reprehendunt.
+--><!-- Lightbox not close--><!--amp-img(on="tap:lightbox1" role="button" tabindex="0" src="https://www.javascript.com/images/logo-monochrome.svg" width="200" height="100")--><!--amp-image-lightbox(id="lightbox1" layout="nodisplay")--><!-- Lightbox with close image--><button on="tap:my-lightbox">Open lightbox</button><amp-lightbox id="my-lightbox" layout="nodisplay"><div class="lightbox"><amp-img src="http://gruntjs.com/img/grunt-logo.png" width="300" height="500"></amp-img><div close>Close</div></div></amp-lightbox><!-- Lists--><!--amp-list(src="https://raw.githubusercontent.com/ermarin/slider/master/package.json")template(type="amp-mustache")
+    div
+        amp-img(src="{{imageUrl}}" width=50 height=50)
+        {{title}}
+div.list-overflow(overflow role=button aria-lable="Show more") Show more--></body>

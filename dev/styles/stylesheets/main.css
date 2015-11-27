@@ -1,0 +1,73 @@
+/* line 3, ../sass/main.scss */
+.amp-img {
+  background-color: lightBlue;
+}
+
+/* line 6, ../sass/main.scss */
+.amp-carousel-button-prev {
+  left: 16px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path d="M11.56 5.56L10.5 4.5 6 9l4.5 4.5 1.06-1.06L8.12 9z" fill="#fff" /></svg>');
+}
+
+/* line 10, ../sass/main.scss */
+amp-lightbox {
+  background: green;
+  text-align: center;
+}
+
+/* line 15, ../sass/main.scss */
+html {
+  height: 100%;
+}
+
+/* line 18, ../sass/main.scss */
+body {
+  background-color: silver;
+  height: 100%;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 27, ../sass/main.scss */
+svg {
+  /*display: block;
+  position: relative;
+  min-width: 460px;
+  width: 70%;
+  height: 70%;
+  top: 50%;
+  @include transform(translateY(-50%));
+  margin: 0 auto;
+  overflow: hidden;
+  @include background-size(cover);*/
+  border: 1px solid black;
+  background: url("http://bower.io/img/bower-logo.png");
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+  background-position: 100px 100px;
+}
+
+/* line 44, ../sass/main.scss */
+.filtered {
+  -webkit-filter: url(#myfilter);
+  filter: url(#myfilter);
+  color: white;
+  font-family: 'Racing Sans One', cursive;
+  fill: #2B3F0E;
+  font-size: 140px;
+}
+
+/* line 51, ../sass/main.scss */
+.fechas {
+  width: 100px;
+  height: 100px;
+  background-color: seagreen;
+  color: white;
+  padding: 10px;
+}
