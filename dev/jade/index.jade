@@ -26,15 +26,44 @@ body
             | Example gallery with AMP.
 
     div.cont-gallery
-        button(on="tap:my-lightbox") Grunt
-        amp-lightbox(id="my-lightbox" layout="nodisplay")
+        button(on="tap:htmlLightbox") HTML5
+        amp-lightbox(id="htmlLightbox" layout="nodisplay")
             div.lightbox
-                amp-img(src="../imgs/grunt.png" width="300" height="500")
+                amp-img(src="../imgs/html5.png" width="300" height="400")
                 div(close) Close
 
-
-        button(on="tap:mylightbox") Bower
-        amp-lightbox(id="mylightbox" layout="nodisplay")
+        button(on="tap:cssLightbox") CSS3
+        amp-lightbox(id="cssLightbox" layout="nodisplay")
             div.lightbox
-                amp-img(src="../imgs/bower.png" width="300" height="500")
+                amp-img(src="../imgs/css3.png" width="300" height="400")
+                div(close) Close
+
+        button(on="tap:jsLightbox") Javascript
+        amp-lightbox(id="jsLightbox" layout="nodisplay")
+            div.lightbox
+                amp-img(src="../imgs/jsG.png" width="300" height="400")
+                div(close) Close
+
+        button(on="tap:nodeLightbox") Node
+        amp-lightbox(id="nodeLightbox" layout="nodisplay")
+            div.lightbox
+                amp-img(src="../imgs/node.png" width="300" height="400")
+                div(close) Close
+
+        button(on="tap:jadeLightbox") Jade
+        amp-lightbox(id="jadeLightbox" layout="nodisplay")
+            div.lightbox
+                amp-img(src="../imgs/jade.png" width="300" height="400")
+                div(close) Close
+
+        button(on="tap:gruntLightbox") Grunt
+        amp-lightbox(id="gruntLightbox" layout="nodisplay")
+            div.lightbox
+                amp-img(src="../imgs/grunt.png" width="300" height="400")
+                div(close) Close
+
+        button(on="tap:bowerLightbox") Bower
+        amp-lightbox(id="bowerLightbox" layout="nodisplay")
+            div.lightbox
+                amp-img(src="../imgs/bower.png" width="300" height="400")
                 div(close) Close

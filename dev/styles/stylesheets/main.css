@@ -10,11 +10,11 @@ body {
 /* line 11, ../sass/main.scss */
 amp-lightbox {
   text-align: center;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjQ1cHgiIGN5PSI0NXB4IiByPSIyNTAlIj48c3RvcCBvZmZzZXQ9IjYwJSIgc3RvcC1jb2xvcj0iI2NjY2NjYyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzMzMzMzMyIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjMwcHgiIGN5PSIzMHB4IiByPSIyMDAlIj48c3RvcCBvZmZzZXQ9IjI1JSIgc3RvcC1jb2xvcj0iI2NjY2NjYyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzMzMzMzMyIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
-  background-image: -moz-radial-gradient(45px 45px, #cccccc 150px, #333333 250px);
-  background-image: -webkit-radial-gradient(45px 45px, #cccccc 150px, #333333 250px);
-  background-image: radial-gradient(45px 45px, #cccccc 150px, #333333 250px);
+  background-image: -moz-radial-gradient(30px 30px, #cccccc 50px, #333333 200px);
+  background-image: -webkit-radial-gradient(30px 30px, #cccccc 50px, #333333 200px);
+  background-image: radial-gradient(30px 30px, #cccccc 50px, #333333 200px);
 }
 
 /* line 15, ../sass/main.scss */
@@ -66,7 +66,7 @@ button:hover {
 /* line 45, ../sass/main.scss */
 .cont-gallery {
   top: 150px !important;
-  width: 90%;
+  width: 80%;
   height: auto;
   text-align: center;
   position: relative;
@@ -80,7 +80,7 @@ div[close] {
   font-family: 'Racing Sans One', cursive;
   color: #fff;
   cursor: pointer;
-  margin-top: 20px !important;
+  margin-top: 10% !important;
 }
 
 /* line 61, ../sass/main.scss */

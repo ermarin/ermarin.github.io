@@ -10,7 +10,7 @@ body {
 
 amp-lightbox {
     text-align: center;
-    @include background-image(radial-gradient(45px 45px, #ccc 150px, #333 250px));
+    @include background-image(radial-gradient(30px 30px, #ccc 50px, #333 200px));
 }
 amp-fit-text {
     color: white;
@@ -44,7 +44,7 @@ button:hover {
 }
 .cont-gallery {
     top: 150px !important;
-    width: 90%;
+    width: 80%;
     height: auto;
     text-align: center;
     position: relative;
@@ -56,7 +56,7 @@ div[close] {
     font-family: 'Racing Sans One', cursive;
     color: #fff;
     cursor: pointer;
-    margin-top: 20px !important;
+    margin-top: 10% !important;
 }
 div[close]:hover {
     text-decoration: underline;
