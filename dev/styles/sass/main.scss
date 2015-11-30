@@ -2,18 +2,23 @@
 
 body {
     background-color: silver;
-    height: 100%;
-    overflow: hidden;
+    height: auto !important;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
-amp-lightbox {
+amp-image-lightbox {
     text-align: center;
-    @include background-image(radial-gradient(30px 30px, #ccc 50px, #333 200px));
+    @include background-image(radial-gradient(30px 30px, #ccc 50px, #0C394A 250px));
 }
+
+amp-image-lightbox-caption {
+    border: 2px solid pink !important;
+}
+
 amp-fit-text {
-    color: white;
+    color: #fff;
     font-family: 'Racing Sans One', cursive;
     text-align: center;
     @include text-shadow(7px 7px 10px #ccc);
@@ -27,14 +32,20 @@ button {
     cursor: pointer;
     outline: none;
     border: 0px solid #333;
-    margin: 15px;
+    margin: 10px;
     @include border-radius(8px);
     @include box-shadow(#064404 3px 3px 12px);
     @include background-image(linear-gradient(to bottom, #21BD1C, #096006));
 }
+
 button:hover {
     background: #096006;
 }
+
+img {
+    outline: none !important;
+}
+
 .head {
     top: 0px !important;
     width: 100%;
@@ -43,21 +54,100 @@ button:hover {
     height: 100px;
 }
 .cont-gallery {
+    display: none;
+    font-family: 'Racing Sans One', cursive;
     top: 150px !important;
-    width: 80%;
+    width: 70% !important;
     height: auto;
     text-align: center;
     position: relative;
     margin: auto;
+    margin-bottom: 30px;
     background: #F5F7F5;
-    padding: 20px;
+    padding: 10px 25px 25px;
+    @include border-radius(10px);
+    @include box-shadow(#333 10px 10px 10px);
 }
+
+.cont-gallery > .close {
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    position: relative;
+    margin-left: 100%;
+    cursor: pointer;
+    z-index: 1000;
+}
+
 div[close] {
     font-family: 'Racing Sans One', cursive;
     color: #fff;
     cursor: pointer;
-    margin-top: 10% !important;
+    margin-top: 5% !important;
 }
 div[close]:hover {
     text-decoration: underline;
+}
+ul {
+    list-style-type: none;
+    margin: auto;
+    margin-top: 120px;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 22px;
+    color: #333;
+}
+ul > li {
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    width: 150px;
+    cursor: pointer;
+    vertical-align: middle;
+    @include border-radius(5px);
+    @include box-shadow(#666 5px 5px 10px);
+    @include background-image(linear-gradient(#fff, #aaa));
+}
+
+.boxes {
+    display: block;
+    position: initial;
+    @include animation(box_anim 1s linear);
+}
+
+.menu_move {
+    @include animation(move_menu 1s);
+}
+
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+    @-ms-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+@include keyframes(box_anim) {
+    0% {
+        @include transform( scale(0.0) );
+    }
+    100% {
+        @include transform( scale(1.0) );
+    }
+}
+
+@include keyframes(move_menu) {
+    0% {
+        @include transform( transalate(0.0px, 0.0px) );
+        @include opacity(1);
+    }
+    100% {
+        @include transform( translate(50px, 100px) );
+        @include opacity(0.2);
+    }
 }
