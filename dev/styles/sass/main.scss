@@ -24,24 +24,6 @@ amp-fit-text {
     @include text-shadow(7px 7px 10px #ccc);
 }
 
-button {
-    font-family: Verdana, sans-serif;
-    font-size: 12px;
-    color: #fff;
-    padding: 5px;
-    cursor: pointer;
-    outline: none;
-    border: 0px solid #333;
-    margin: 10px;
-    @include border-radius(8px);
-    @include box-shadow(#064404 3px 3px 12px);
-    @include background-image(linear-gradient(to bottom, #21BD1C, #096006));
-}
-
-button:hover {
-    background: #096006;
-}
-
 img {
     outline: none !important;
 }
@@ -52,19 +34,17 @@ img {
     position: absolute;
     background: #000;
     height: 100px;
+    z-index: 1000;
 }
 .cont-gallery {
     display: none;
     font-family: 'Racing Sans One', cursive;
-    top: 150px !important;
-    width: 70% !important;
+    width: 80% !important;
     height: auto;
     text-align: center;
-    position: relative;
-    margin: auto;
-    margin-bottom: 30px;
     background: #F5F7F5;
     padding: 10px 25px 25px;
+    margin: 120px auto 0px !important;
     @include border-radius(10px);
     @include box-shadow(#333 10px 10px 10px);
 }
@@ -78,43 +58,37 @@ img {
     z-index: 1000;
 }
 
-div[close] {
-    font-family: 'Racing Sans One', cursive;
-    color: #fff;
-    cursor: pointer;
-    margin-top: 5% !important;
-}
-div[close]:hover {
-    text-decoration: underline;
-}
-ul {
-    list-style-type: none;
+.menu {
     margin: auto;
     margin-top: 120px;
     font-family: 'Racing Sans One', cursive;
-    font-size: 22px;
+    font-size: 24px;
     color: #333;
-}
-ul > li {
+    width: 100% !important;
     text-align: center;
-    margin: 10px;
-    padding: 5px;
-    width: 150px;
+    @include text-shadow(#fff 1px 1px 1px);
+    @include opacity(1);
+}
+span {
+    text-align: center;
+    margin: 0px !important;
+    padding: 35px;
+    width: 30% !important;
     cursor: pointer;
     vertical-align: middle;
-    @include border-radius(5px);
+    display: inline-block !important;
     @include box-shadow(#666 5px 5px 10px);
     @include background-image(linear-gradient(#fff, #aaa));
 }
 
 .boxes {
     display: block;
-    position: initial;
     @include animation(box_anim 1s linear);
 }
 
 .menu_move {
-    @include animation(move_menu 1s);
+    @include animation(move_menu 1s linear);
+    @include opacity(0);
 }
 
 @mixin keyframes($name) {
@@ -143,11 +117,9 @@ ul > li {
 
 @include keyframes(move_menu) {
     0% {
-        @include transform( transalate(0.0px, 0.0px) );
         @include opacity(1);
     }
     100% {
-        @include transform( translate(50px, 100px) );
         @include opacity(0.2);
     }
 }
