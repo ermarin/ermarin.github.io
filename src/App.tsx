@@ -5,8 +5,8 @@ function App() {
   const mySkills:string[] = [
     'HTML5', 'CSS3', 'Javascript', 'ES6', 'ReactJs', 'React Hooks', 'React Native', 'Node.js',
     'Fetch API', 'react-hook-form', 'react-datepicker', 'JSX', 'ChakraUI', 'styled-components',
-    'Redux', 'redux-saga', 'Expo & EAS', 'EXPRESSJS', 'MONGODB', 'GIT', 'BOOTSTRAP', 'LESS', 'SASS',
-    'D3.JS', 'SQLITE'
+    'Redux', 'redux-saga', 'Expo & EAS', 'Express.js', 'MongoDB', 'Git', 'Bootstrap', 'LESS', 'SASS',
+    'D3.JS', 'SQLite'
   ];
   const { isOpen, onToggle } = useDisclosure();
   return (
